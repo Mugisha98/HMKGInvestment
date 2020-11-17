@@ -1,0 +1,185 @@
+                /**-- NAVIGATION BAR --**/
+                /**-- NAVIGATION BAR --**/
+
+/** Removes the bullets the list, and it's default margin and padding**/
+ul
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/** place the menu option **/
+li
+{
+    float: left;
+    margin: 2% 1% auto;
+}
+
+/** styles the options in the naviBar**/
+li a
+{
+    display: inline-block;
+    color: black;
+    text-align: center;
+    /*padding: 14px 16px;*/
+    text-decoration: none;
+}
+
+/** hover effect **/
+li a:hover{
+    background-color: #0e80ff;
+}
+
+/** The logo in the navigationbar **/
+#navBarLogo
+{
+    width: 10%;
+    float: left;
+    margin-right: 45%;
+    margin-left: 5%;
+}
+
+header{
+    background-color: white;
+    border-style: none none solid none;
+}
+
+
+
+                /**-- Body --**/
+                /**-- Body --**/
+
+/** Background color for the body **/
+.bodyBackgroundColor{
+    background-color: white;
+}
+
+
+                /**-- About us boxes--**/
+                /**-- About us boxes--**/
+
+/** Boxes describing the owners **/
+.column{
+    float: left;
+    width: 40%;
+    margin-bottom: 16px;
+    padding: 0 5%;
+}
+
+/** Add some shadows to create a card effect **/
+.card{
+    box-shadow: 0 4px 50px 0 rgba(0, 0, 0, 0.2);
+}
+
+/** Some left and right padding indside the container **/
+.container{
+    padding: 0 4%;
+}
+
+
+/** Display the columns below each other instead of side by side om small screens **/
+@media screen and (max-width: 650px){
+    .column{
+        width: 100%;
+        display: block;
+    }
+}
+
+
+                /**-- BUTTONS --**/
+                /**-- BUTTONS --**/
+
+/** contact button **/
+.contactBtn{
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 2%;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 2%;
+}
+.contactBtn:Hover{
+    background-color: grey;
+}
+
+                /**-- About us picture --**/
+                /**-- About us picture --**/
+
+/** The thick frame surrounding the pictures **/
+.aboutUsPic{
+    border: 40px solid black;
+}
+
+                /**-- FOOTER --**/
+                /*--- FOOTER --*/
+
+/** The text, background color in the footer **/
+footer{
+    background-color: black;
+    color: white;
+    max-width: 100%;
+    margin-top: 2%;
+    float: left;
+    width: 100%;
+
+
+}
+.footerContent{
+    /*background-color: black;*/
+    font-size: 65%;
+    text-align: center;
+}
+
+
+                /**-- TABLE --**/
+                /**-- TABLE --**/
+
+table, th, td{
+    border: 2px solid #787b86;
+    border-collapse: collapse;
+    text-align: center;
+    margin: 2%;
+    padding: 1%;
+}
+
+/** Table headline **/
+th{
+    background-color: #131722;
+    color: white;
+    width: 10%;
+}
+
+/** the row where the data in the table is **/
+td{
+    background-color: white;
+}
+
+
+
+                /**-- The headlines to the site overview --**/
+                /**-- The headlines to the site overview --**/
+
+/** **/
+.textSiteOverview{
+    margin-left: 2%;
+}
+
+.stockTable{
+    margin-left: 15%;
+}
+
+
+                                /**-- WIDGETS --**/
+                                /**-- WIDGETS --**/
+
+.countryFlagPic{
+    width:7%;
+    border-radius: 25%;
+    margin-bottom: -5%;
+}

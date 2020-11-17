@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="DA">
+<head>
+    <!-- Læser Æ,Ø,Å -->
+    <meta charset="UTF-8">
+    <title>HMKG Investment</title>
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+    <!-- FAVICON-->
+    <link rel="icon" href="/img/fav_icons.png" type="image">
+</head>
+<body class="bodyBackgroundColor">
+<!-- HEADER -->
+<header class="navColor">
+    <div>
+        <nav>
+            <ul>
+                <a href="/"><img id="navBarLogo" src="/img/hmkgLogo.png"></a>
+                <li><a href="/portfolio">Portfolio</a></li>
+                <li><a href="/analysis">Analysis</a></li>
+                <li><a href="/about-Us">About Us</a></li>
+                <li><a href="/trading-hours">Trading Hours</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<!-- MAIN -->
+<main>
+    <div>
+        <h1 class="textSiteOverview">Portfolio Overview</h1>
+    </div>
+    <!-- TradingView Widget BEGIN -->
+    <div class="tradingview-widget-container">
+        <div class="tradingview-widget-container__widget"></div>
+        <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com" rel="noopener" target="_blank"><span class="blue-text">Ticker Tape</span></a> by TradingView</div>
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+            {
+                "symbols": [
+                {
+                    "proName": "FOREXCOM:SPXUSD",
+                    "title": "S&P 500"
+                },
+                {
+                    "proName": "FOREXCOM:NSXUSD",
+                    "title": "Nasdaq 100"
+                },
+                {
+                    "proName": "FX_IDC:EURUSD",
+                    "title": "EUR/USD"
+                },
+                {
+                    "proName": "BITSTAMP:BTCUSD",
+                    "title": "BTC/USD"
+                },
+                {
+                    "proName": "BITSTAMP:ETHUSD",
+                    "title": "ETH/USD"
+                }
+            ],
+                "colorTheme": "light",
+                "isTransparent": false,
+                "displayMode": "adaptive",
+                "locale": "en"
+            }
+        </script>
+    </div>
+    <!-- TradingView Widget END -->
+
+    <!-- TABLE -->
+    <div>
+        <table>
+            <tr>
+                <th>Company</th>
+                <th>Ticker code</th>
+                <th>Buy price</th>
+                <th>Shares</th>
+                <th>Date</th>
+                <th>ROI</th>
+            </tr>
+            <tr>
+                <td>Aytu BioScience, Inc</td>
+                <td>AYTU</td>
+                <td>USD 1.60</td>
+                <td>950</td>
+                <td>21/05-2020</td>
+                <td>-12.43%</td>
+            </tr>
+            <tr>
+                <td>Wells Fargo & Company</td>
+                <td>WFC</td>
+                <td>USD 32.63</td>
+                <td>78</td>
+                <td>04/06-2020</td>
+                <td>+9.64%</td>
+            </tr>
+            <tr>
+                <td>BGC Partners, Inc</td>
+                <td>BGCP</td>
+                <td>USD 3.32</td>
+                <td>750</td>
+                <td>08/06-2020</td>
+                <td>-5.59%</td>
+            </tr>
+        </table>
+    </div>
+    <!-- TradingView Widget BEGIN -->
+    <div class="tradingview-widget-container">
+        <div id="technical-analysis"></div>
+        <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/AAPL/" rel="noopener" target="_blank"><span class="blue-text">AAPL Chart</span></a> by TradingView</div>
+        <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+        <script type="text/javascript">
+            new TradingView.widget(
+                {
+                    "container_id": "technical-analysis",
+                    "width": 1000,
+                    "height": 610,
+                    "symbol": "AAPL",
+                    "interval": "D",
+                    "timezone": "exchange",
+                    "theme": "dark",
+                    "style": "1",
+                    "toolbar_bg": "#f1f3f6",
+                    "withdateranges": true,
+                    "hide_side_toolbar": false,
+                    "allow_symbol_change": true,
+                    "save_image": false,
+                    "studies": [
+                        "ROC@tv-basicstudies",
+                        "StochasticRSI@tv-basicstudies",
+                        "MASimple@tv-basicstudies"
+                    ],
+                    "show_popup_button": true,
+                    "popup_width": "1000",
+                    "popup_height": "650",
+                    "locale": "en"
+                }
+            );
+        </script>
+    </div>
+    <!-- TradingView Widget END -->
+</main>
+
+<!-- FOOTER -->
+<footer>
+    <div class="footerContent">
+        <p>Made with♥ by HMKG Investment ApS</p>
+        <p>Copyright© 2020 by HMKG Investment ApS</p>
+    </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Analysis</title>
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+    <!-- FAVICON-->
+    <link rel="icon" href="/img/fav_icons.png" type="image">
+</head>
+<body class="bodyBackgroundColor">
+<!-- HEADER -->
+<header class="navColor">
+    <div>
+        <nav>
+            <ul>
+                <a href="/"><img id="navBarLogo" src="/img/hmkgLogo.png"></a>
+                <li><a href="/portfolio">Portfolio</a></li>
+                <li><a href="/analysis">Analysis</a></li>
+                <li><a href="/about-Us">About Us</a></li>
+                <li><a href="/trading-hours">Trading Hours</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<!-- MAIN -->
+<main>
+    <div>
+        <h1 class="textSiteOverview">Analysis</h1>
+    </div>
+    <!-- TradingView Widget BEGIN -->
+    <div class="tradingview-widget-container">
+        <div class="tradingview-widget-container__widget"></div>
+        <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com" rel="noopener" target="_blank"><span class="blue-text">Ticker Tape</span></a> by TradingView</div>
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+            {
+                "symbols": [
+                {
+                    "proName": "FOREXCOM:SPXUSD",
+                    "title": "S&P 500"
+                },
+                {
+                    "proName": "FOREXCOM:NSXUSD",
+                    "title": "Nasdaq 100"
+                },
+                {
+                    "proName": "FX_IDC:EURUSD",
+                    "title": "EUR/USD"
+                },
+                {
+                    "proName": "BITSTAMP:BTCUSD",
+                    "title": "BTC/USD"
+                },
+                {
+                    "proName": "BITSTAMP:ETHUSD",
+                    "title": "ETH/USD"
+                }
+            ],
+                "colorTheme": "light",
+                "isTransparent": false,
+                "displayMode": "adaptive",
+                "locale": "en"
+            }
+        </script>
+    </div>
+    <!-- TradingView Widget END -->
+    <div>
+        <img src="/img/hmkgLogo.png" alt="HMKGlogo" width="100%">
+    </div>
+</main>
+
+<!-- FOOTER -->
+<footer>
+    <div class="footerContent">
+        <p>Made with♥ by HMKG Investment ApS</p>
+        <p>Copyright© 2020 by HMKG Investment ApS</p>
+    </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Læser Æ,Ø,Å -->
+    <meta charset="UTF-8">
+    <title>HMKG Investment</title>
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+    <!-- FAVICON-->
+    <link rel="icon" href="/img/fav_icons.png" type="image">
+</head>
+<body class="bodyBackgroundColor">
+<!-- HEADER -->
+<header class="navColor">
+    <div>
+        <nav>
+            <ul>
+                <a href="/"><img id="navBarLogo" src="/img/hmkgLogo.png"></a>
+                <li><a href="/portfolio">Portfolio</a></li>
+                <li><a href="/analysis">Analysis</a></li>
+                <li><a href="/about-Us">About Us</a></li>
+                <li><a href="/trading-hours">Trading Hours</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<!-- MAIN -->
+<main>
+    <div>
+        <h1 class="textSiteOverview">World Stock Exchanges Hours</h1>
+    </div>
+    <!-- TradingView Widget BEGIN -->
+    <div class="tradingview-widget-container">
+        <div class="tradingview-widget-container__widget"></div>
+        <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com" rel="noopener" target="_blank"><span class="blue-text">Ticker Tape</span></a> by TradingView</div>
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+            {
+                "symbols": [
+                {
+                    "proName": "FOREXCOM:SPXUSD",
+                    "title": "S&P 500"
+                },
+                {
+                    "proName": "FOREXCOM:NSXUSD",
+                    "title": "Nasdaq 100"
+                },
+                {
+                    "proName": "FX_IDC:EURUSD",
+                    "title": "EUR/USD"
+                },
+                {
+                    "proName": "BITSTAMP:BTCUSD",
+                    "title": "BTC/USD"
+                },
+                {
+                    "proName": "BITSTAMP:ETHUSD",
+                    "title": "ETH/USD"
+                }
+            ],
+                "colorTheme": "light",
+                "isTransparent": false,
+                "displayMode": "adaptive",
+                "locale": "en"
+            }
+        </script>
+    </div>
+    <!-- TradingView Widget END -->
+
+    <!-- Time Zone Widget BEGIN -->
+    <div class="clockWidget" style="display: inline-flex">
+        <!-- DENMARK -->
+        <div style="text-align:center; padding:1em 0;">
+            <h4>
+                <a style="text-decoration:none;" href="https://www.zeitverschiebung.net/en/city/2618425">
+                <span style="color:gray;">Current local time in</span>
+                    <br />Copenhagen, Denmark</a>
+                    <br />
+                    <img class="countryFlagPic" src="/img/ImgDK.svg">
+            </h4>
+            <iframe src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=en&size=small&timezone=Europe%2FCopenhagen" width="100%" height="90" frameborder="0" seamless></iframe>
+        </div>
+        <!-- UNITED STATES -->
+        <div style="text-align:center;padding:1em 0;">
+            <h4>
+                <a style="text-decoration:none;" href="https://www.zeitverschiebung.net/en/city/5128581">
+                <span style="color:gray;">Current local time in</span>
+                    <br />New York City, United States</a>
+                    <br />
+                    <img class="countryFlagPic" src="/img/ImgUS.svg">
+            </h4>
+            <iframe src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=en&size=small&timezone=America%2FNew_York" width="100%" height="90" frameborder="0" seamless></iframe>
+        </div>
+        <!-- UNITED KINGDOM -->
+        <div style="text-align:center;padding:1em 0;">
+            <h4>
+                <a style="text-decoration:none;" href="https://www.zeitverschiebung.net/en/city/2643743">
+                    <span style="color:gray;">Current local time in</span>
+                    <br />London, United Kingdom</a>
+                    <br />
+                    <img class="countryFlagPic" src="/img/ImgUK.svg">
+            </h4>
+            <iframe src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=en&size=small&timezone=Europe%2FLondon" width="100%" height="90" frameborder="0" seamless></iframe>
+        </div>
+        <!-- CHINA -->
+        <div style="text-align:center;padding:1em 0;">
+            <h4>
+                <a style="text-decoration:none;" href="https://www.zeitverschiebung.net/en/city/1880252">
+                    <span style="color:gray;">Current local time in</span>
+                    <br />Shanghai, China</a>
+                    <br />
+                    <img class="countryFlagPic" src="/img/ImgChina.svg">
+            </h4>
+            <iframe src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=en&size=small&timezone=Asia%2FSingapore" width="100%" height="90" frameborder="0" seamless></iframe> </div>
+    </div>
+    <!-- Time Zone Widget END -->
+
+    <!-- Stock Exchange Table START-->
+    <div>
+        <table>
+            <tr>
+                <th><b>Country</b></th>
+                <th><b>Stock Exchange</b></th>
+                <th><b>Local Hours</b></th>
+                <th><b>Denmark Standard Time</b></th>
+                <th><b>UTC</b></th>
+            </tr>
+            <tr>
+                <td style="background-color: #787b86">EUROPA</td>
+            </tr>
+            <tr>
+                <td><p>Denmark</p></td>
+                <td><p>OMX Copenhagen 25 GI Index</p></td>
+                <td><p>9:00 a.m. to 5:00 p.m.</p></td>
+                <td><p>9:00 a.m. to 5:00 p.m.</p></td>
+                <td><p>(UTC +1) 8:00 p.m. to 4 p.m.</p></td>
+            </tr>
+            <tr>
+                <td><p>United Kingdom</p></td>
+                <td><p>London Stock Exchange</p></td>
+                <td><p>8:30 a.m. to 4:30 p.m.</p></td>
+                <td><p>9:30 a.m. to 5:30 p.m.</p></td>
+                <td><p>(UTC 0) 8:30 a.m. to 4:30 p.m.</p></td>
+            </tr>
+            <tr>
+                <td><p>Germany</p></td>
+                <td><p>Börse Frankfurt Stock Exchange</p></td>
+                <td><p>8:00 a.m. to 8:00 p.m.</p></td>
+                <td><p>8:00 a.m. to 8:00 p.m.</p></td>
+                <td><p>(UTC +1) 7:00 a.m. to 7:00 p.m.</p></td>
+            </tr>
+            <tr>
+                <td><p>France</p></td>
+                <td><p>Euronext</p></td>
+                <td><p>9:00 a.m. to 5:30 p.m.</p></td>
+                <td><p>9:00 a.m. to 5:30 p.m.</p></td>
+                <td><p>(UTC +1) 8:00 a.m. to 4:30 p.m.</p></td>
+            </tr>
+            <tr>
+                <td><p>Russia</p></td>
+                <td><p>Moscow Exchange</p></td>
+                <td><p>9:30 a.m. to 7:00 p.m.</p></td>
+                <td><p>7:30 a.m. to 5:00 p.m.</p></td>
+                <td><p>(UTC +3) 6:30 a.m. to 4:00 p.m.</p></td>
+            </tr>
+            <tr>
+                <td><p>Spain</p></td>
+                <td><p>Madrid Stock Exchange</p></td>
+                <td><p>9:30 a.m. to 5:30 p.m.</p></td>
+                <td><p>9:30 a.m. to 5:30 p.m.</p></td>
+                <td><p>(UTC +1) 8:30 a.m. to 4:30 p.m.</p></td>
+            </tr>
+            <tr>
+                <td style="background-color: #787b86">NORTH AMERICA</td>
+            </tr>
+            <tr>
+                <td><p>United States</p></td>
+                <td><p>New York Stock Exchange (NYSE)</p></td>
+                <td><p>9:30 a.m. to 4:00 p.m.</p></td>
+                <td><p>3:30 p.m. to 10:00 p.m.</p></td>
+                <td><p>(UTC -5) 2:30 p.m. to 9:00 p.m.</p></td>
+            </tr>
+            <tr>
+                <td><p>United States</p></td>
+                <td><p>Nasdaq</p></td>
+                <td><p>9:30 a.m. to 4:00 p.m.</p></td>
+                <td><p>3:30 p.m. to 10:00 p.m.</p></td>
+                <td><p>(UTC -5) 2:30 p.m. to 9:00 p.m.</p></td>
+            </tr>
+            <tr>
+                <td style="background-color: #787b86">ASIA</td>
+            </tr>
+            <tr>
+                <td><p>Japan</p></td>
+                <td><p>Tokyo Stock Exchange</p></td>
+                <td>
+                    <p>9:00 a.m. to 3:00 p.m.</p>
+                    <p><strong>lunch 11:30 a.m. to 12:30 a.m.</strong></p>
+                </td>
+                <td>
+                    <p>1:00 a.m. to 7:00 a.m.</p>
+                    <p><strong>lunch 3:30 a.m. to 4:30 a.m.</strong></p>
+                </td>
+                <td>
+                    <p>(UTC +9) 12:00 a.m. to 6:00 a.m.</p>
+                    <p><strong>lunch 2:30 a.m. to 3:30 a.m.</strong></p>
+                </td>
+            </tr>
+            <tr>
+                <td><p>Hong Kong</p></td>
+                <td><p>Hong Kong Stock Exchange</p></td>
+                <td>
+                    <p>9:30 a.m. to 4:00 p.m.</p>
+                    <p><strong>lunch 12:00 a.m. to 1:00 p.m.</strong></p>
+                </td>
+                <td>
+                    <p>2:30 a.m. to 9:00 a.m.</p>
+                    <p><strong>lunch 5:00 a.m. to 6:00 a.m.</strong></p>
+                </td>
+                <td>
+                    <p>(UTC +9) 1:30 a.m. to 8:00 a
+                    <p><strong>lunch 4:00 a.m. to 5:00 a.m.</strong></p>
+                </td>
+            </tr>
+            <tr>
+                <td><p>Shanghai</p></td>
+                <td><p>Shanghai Stock Exchange</p></td>
+                <td>
+                    <p>9:30 a.m. to 3:00 p.m.</p>
+                    <p><strong>lunch 11:30 a.m. to 1:00 p.m.</strong></p>
+                </td>
+                <td>
+                    <p>2:30 a.m. to 8:00 a.m.</p>
+                    <p><strong>lunch 4:30 a.m. to 6:00 a.m.</strong></p>
+                </td>
+                <td>
+                    <p>(UTC +9) 1:30 a.m. to 7:00 a.m.</p>
+                    <p><strong>lunch 3:30 a.m. to 5:00 a.m.</strong></p>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <!-- Stock Exchange Table END-->
+</main>
+
+</body>
+</html>
