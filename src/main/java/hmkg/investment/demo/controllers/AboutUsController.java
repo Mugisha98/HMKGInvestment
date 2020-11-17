@@ -1,8 +1,9 @@
 package hmkg.investment.demo.controllers;
 
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
-@Controller
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
 public class AboutUsController {
 
     @GetMapping("/about-Us")
